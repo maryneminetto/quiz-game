@@ -37,6 +37,7 @@ const quizData = [
 ]
 
 let currentQuiz = 0;
+let answer = undefined;
 
 const questionEl = document.getElementById ('question');
 const aText = document.getElementById ('aText');
@@ -55,13 +56,31 @@ function loadQuiz () {
     cText.innerText = currentQuizData.c;
 }
 
+function getSelected () {
+
+    const answersEls = document.querySelectorAll('.answer');
+
+    answersEls.forEach(answerEl => {
+
+        if (answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+}
+
 submitBtn.addEventListener('click', () => {
 
     currentQuiz++;
 
-    if (currentQuiz < quizData.length) {
-        loadQuiz();
-    }
+    getSelected();
+
+    //if (currentQuiz < quizData.length) {
+       // loadQuiz();
+    //} else {
+    //    alert ('You finished!')
+    //}
+
+    
 
     
 })
