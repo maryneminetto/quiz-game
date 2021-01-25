@@ -19,6 +19,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   width: 600px;
   max-width: 100%;
 }
@@ -27,18 +28,33 @@ body {
   padding: 4rem;
 }
 
+h2 {
+  margin: 1rem 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
+}
+
+ul li {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
 }
 
 button {
   background-color: #7f53ac;
   border: none;
   border-radius: 0 0 5px 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
   color: white;
   display: block;
   font-family: inherit;
   width: 100%;
-  padding: 2rem;
+  padding: 1.3rem;
+}
+
+button:hover {
+  background-color: #50316e;
 }

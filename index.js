@@ -1,4 +1,4 @@
-const quizDataHtml = [
+const quizData = [
     {
         question: 'What is the doctype for HTML5 document?',
         a: '<!DOCTYPE HTML5>',
@@ -35,3 +35,33 @@ const quizDataHtml = [
         correct: 'a'
     }
 ]
+
+let currentQuiz = 0;
+
+const questionEl = document.getElementById ('question');
+const aText = document.getElementById ('aText');
+const bText = document.getElementById ('bText');
+const cText = document.getElementById ('cText');
+const submitBtn = document.getElementById ('submit');
+
+loadQuiz();
+
+function loadQuiz () {
+
+    const currentQuizData = quizData[currentQuiz];
+    questionEl.innerText = currentQuizData.question;
+    aText.innerText = currentQuizData.a;
+    bText.innerText = currentQuizData.b;
+    cText.innerText = currentQuizData.c;
+}
+
+submitBtn.addEventListener('click', () => {
+
+    currentQuiz++;
+
+    if (currentQuiz < quizData.length) {
+        loadQuiz();
+    }
+
+    
+})
