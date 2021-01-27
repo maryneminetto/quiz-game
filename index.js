@@ -28,10 +28,45 @@ const quizData = [
         correct: 'a',
     },
     {
+        question: 'From which version of Internet Explorer can the HTML5 section elements be used natively (without a hack or additional script)?',
+        a: 'Internet Explorer 8',
+        b: 'Internet Explorer 9',
+        c: 'Internet Explorer 10',
+        correct: 'b',
+    },
+    {
         question: 'What is the method of associating a complete caption with an illustration?',
         a: '<figure> <img src = "image.jpg"> <figcaption> The caption ... </figcaption> </figure>',
         b: '<figure src = "image.jpg" legend = "# cap1"> </figure> <figcaption id = "cap1"> The legend ... </figcaption>',
         c: '<figure> <legend> The legend ... </legend> <img src = "image.jpg"> </figure>',
+        correct: 'a'
+    },
+    {
+        question: 'How to represent a 50% progress bar?',
+        a: '<progress value="50" max="100">50%</progress>',
+        b: '<input type="progress" value="0.5">50%</progress>',
+        c: '<input type="progress" value="50" max="100" title="50%" />',
+        correct: 'a'
+    },
+    {
+        question: 'How do I associate a choice/suggestion list with a text input field?',
+        a: '<input datalist="fruits"><list id="fruits"><option value="Kiwi"><option value="Orange"><option value="Mangue"></list>',
+        b: '<input list="fruits"><datalist id="fruits"><option>Kiwi</option><option>Orange</option><option>Mangue</option></datalist>',
+        c: '<input list="fruits"><select><datalist id="fruits" values="Kiwi,Orange,Mangue" /></select>',
+        correct: 'b'
+    },
+    {
+        question: 'Which attribute allows to display a default image for the <video> element ?',
+        a: '<video preview="apercu.jpg">',
+        b: '<video><param name="thumbnail" value="apercu.jpg" /></video>',
+        c: '<video poster="apercu.jpg">',
+        correct: 'c'
+    },
+    {
+        question: 'Which tag should allow the inclusion of text subtitles in videos played with <video> ?',
+        a: '<track src="soustitres.vtt">',
+        b: '<subtitle source="soustitres.srt">',
+        c: '<captions source="soustitres.srt">',
         correct: 'a'
     }
 ]
